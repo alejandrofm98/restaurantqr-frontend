@@ -9,6 +9,7 @@ import {HiDocumentReport} from "react-icons/hi";
 import {LuCopyright} from "react-icons/lu";
 import {useState} from "react";
 import {RiCloseLine, RiMenu3Fill} from "react-icons/ri";
+import Link from "next/link";
 
 export default function SidebarComponent() {
     const [activeSidebar, setActiveSidebar] = useState<boolean>(false)
@@ -31,16 +32,20 @@ export default function SidebarComponent() {
                             </h3>
                             <ul>
                                 <li>
-                                    <a className="text-gray-500 p-4 flex items-center justify-center gap-2 hover:text-blue-600 hover:cursor-pointer transition-colors font-semibold">
+                                <Link href="/dashboard/home">
+                                    <div className="text-gray-500 p-4 flex items-center justify-center gap-2 hover:text-blue-600 hover:cursor-pointer transition-colors font-semibold">
                                         <MdDashboard className="h-6"/>
                                         Panel
-                                    </a>
+                                    </div>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a className="text-gray-500 p-4 flex items-center justify-center  gap-2 hover:text-blue-600 hover:cursor-pointer transition-colors font-semibold">
+                                <Link href="/dashboard/menu">
+                                    <div className="text-gray-500 p-4 flex items-center justify-center  gap-2 hover:text-blue-600 hover:cursor-pointer transition-colors font-semibold">
                                         <BiSolidFoodMenu className="h-6"/>
                                         Menú
-                                    </a>
+                                    </div>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a className="text-gray-500 p-4 flex items-center justify-center  gap-2 hover:text-blue-600 hover:cursor-pointer transition-colors font-semibold">

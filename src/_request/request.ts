@@ -6,6 +6,8 @@ import { get } from "http";
 type Request_Type = 'GET' | 'POST' | 'DELETE';
 
 export interface RequestResponse {
+    products: any;
+    data: Product[];
     statusText: any;
     error: boolean,
     errorDescription: string | null,
