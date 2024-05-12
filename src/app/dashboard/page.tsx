@@ -1,5 +1,4 @@
 "use client"
-import ReservationComponent from "@/components/navbar/reservationList";
 import {useUserAppContext} from "@/lib/context/auth/user-context";
 
 export default function HomeDashboard() {
@@ -18,7 +17,6 @@ export default function HomeDashboard() {
                 <div className="grid grid-cols-3">
                 </div>
             </div>
-            <ReservationComponent/>
         </>
     )
 }
